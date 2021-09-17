@@ -1,26 +1,23 @@
 <template>
-  <div class='home'>
-    <Start />
-    <Overview />
+  <div class='generator'>
+    <Generate />
   </div>
 </template>
 
 <script lang='ts'>
 import { Options, Vue } from 'vue-class-component';
-import Start from '@/components/Start.vue';
-import Overview from '@/components/Overview.vue';
+import Generate from '@/components/Generate.vue';
 
 @Options({
   components: {
-    Start,
-    Overview
+    Generate
   },
 })
-export default class Home extends Vue {}
+export default class Generator extends Vue {}
 </script>
 
 <style scoped lang='scss'>
-  .home {
+  .generator {
     display: flex;
     flex-direction: column;
     margin: auto;
