@@ -1,4 +1,4 @@
-# octopuss
+# Octopuss
 
 ## Project setup
 ```
