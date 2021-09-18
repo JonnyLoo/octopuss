@@ -1,6 +1,6 @@
 <template>
   <div class='start'>
-    <img src='@/assets/octopuss.png'/>
+    <img src='@/assets/octopi/1.png'/>
     <div class='mint'>
       <span>0.04 ETH</span>
       <button @click='mint'>Mint</button>
@@ -34,7 +34,7 @@
   .mint {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     width: 55%;
 
     span {

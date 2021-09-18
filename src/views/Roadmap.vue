@@ -1,22 +1,19 @@
 <template>
   <div class='page'>
-    <Start />
-    <Overview />
+    <Journey />
   </div>
 </template>
 
 <script lang='ts'>
 import { Options, Vue } from 'vue-class-component';
-import Start from '@/components/Start.vue';
-import Overview from '@/components/Overview.vue';
+import Journey from '@/components/Journey.vue';
 
 @Options({
   components: {
-    Start,
-    Overview
-  },
+    Journey
+  }
 })
-export default class Home extends Vue {}
+export default class Roadmap extends Vue {}
 </script>
 
 <style scoped lang='scss'>

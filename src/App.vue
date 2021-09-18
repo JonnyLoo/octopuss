@@ -1,10 +1,10 @@
 <template>
   <div id='nav'>
-    <img class='site-logo' src='@/assets/octopuss.png'/>
+    <img class='site-logo' src='@/assets/octopi/0.png'/>
     <router-link to='/'>Home</router-link>
-    <router-link to='/'>Roadmap</router-link>
-    <router-link to='/'>Team</router-link>
-    <router-link to='/'>WTF</router-link>
+    <router-link to='/roadmap'>Roadmap</router-link>
+    <router-link to='/team'>Team</router-link>
+    <router-link to='/wtf'>WTF</router-link>
     <router-link to='/generator'>xD</router-link>
     <div class='socials'>
       <img src='@/assets/opensea.svg' />

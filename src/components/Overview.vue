@@ -9,7 +9,7 @@
         In the meantime, enjoy these octopi I rachetly put together.
       </span>
     </div>
-    <img src='@/assets/octopuss.png'/>
+    <img src='@/assets/octopi/2.png'/>
   </div>
 </template>
 

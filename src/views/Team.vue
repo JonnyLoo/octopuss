@@ -1,22 +1,19 @@
 <template>
   <div class='page'>
-    <Start />
-    <Overview />
+    <Myself />
   </div>
 </template>
 
 <script lang='ts'>
 import { Options, Vue } from 'vue-class-component';
-import Start from '@/components/Start.vue';
-import Overview from '@/components/Overview.vue';
+import Myself from '@/components/Myself.vue';
 
 @Options({
   components: {
-    Start,
-    Overview
-  },
+    Myself
+  }
 })
-export default class Home extends Vue {}
+export default class Team extends Vue {}
 </script>
 
 <style scoped lang='scss'>

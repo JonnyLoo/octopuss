@@ -1,22 +1,19 @@
 <template>
   <div class='page'>
-    <Start />
-    <Overview />
+    <Wdf />
   </div>
 </template>
 
 <script lang='ts'>
 import { Options, Vue } from 'vue-class-component';
-import Start from '@/components/Start.vue';
-import Overview from '@/components/Overview.vue';
+import Wdf from '@/components/Wdf.vue';
 
 @Options({
   components: {
-    Start,
-    Overview
-  },
+    Wdf
+  }
 })
-export default class Home extends Vue {}
+export default class Wtf extends Vue {}
 </script>
 
 <style scoped lang='scss'>
