@@ -42,14 +42,6 @@
       font-size: 2rem;
       padding-right: 30px;
     }
-
-    button {
-      width: 200px;
-      height: 50px;
-      font-family: 'Bubblegum Sans', cursive;
-      font-size: 1.2rem;
-      letter-spacing: .1rem;
-    }
   }
 
   .overview {

@@ -1,5 +1,5 @@
 <template>
-  <div class='page'>
+  <div class='full-page'>
     <Generate />
   </div>
 </template>

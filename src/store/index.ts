@@ -5,10 +5,14 @@ const apiUrl = 'https://octopuss-api.herokuapp.com/octopuss'
 
 export default createStore({
   state: {
+    loading: false,
     error: null,
     image: ''
   },
   mutations: {
+    setLoading: (state, isLoading) => {
+      state.loading = isLoading;
+    },
     setError: (state, error) => {
       state.error = error;
     },
@@ -18,7 +22,7 @@ export default createStore({
   },
   actions: {
     generateImage: async ({ commit }) => {
-      console.log('generate image');
+      commit('setLoading', true);
 
       try {
         const result = await axios.post(`${apiUrl}/gimmie`);
@@ -27,9 +31,12 @@ export default createStore({
       } catch (err) {
         commit('setError', err);
       }
+
+      commit('setLoading', false);
     }
   },
   getters: {
+    loading: state => state.loading,
     image: state => state.image
   },
   modules: {
